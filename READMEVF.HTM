@@ -1,0 +1,594 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Draft//EN">
+<html>
+
+<head>
+<title>Visual FoxPro Readme</title>
+<meta name="MS-HAID" content="readmevf" charset = "gb2312">
+</head>
+
+<body bgcolor="#ffffff" onclick="checkExpand( )">
+<font face="宋体" size="2" link="#0000FF" vlink="#660066"
+color="#000000"><script language="JSCRIPT">
+  function checkExpand( )
+  {
+     if ("" != event.srcElement.id)
+     {
+        var ch = event.srcElement.id + "Child";
+        var el = document.all[ch];
+        if (null != el)
+        {
+           el.style.display = "none" == el.style.display ? "" : "none";
+           if (el.style.display != "none")
+           event.returnValue=false;
+        }
+     }
+  }
+
+</script>
+
+
+<h2>Visual FoxPro Readme</h2>
+
+<p>&copy;1998 Microsoft Corporation。保留所有权利。</p>
+
+<p>本文提及的其他产品和公司名称可能是各自所有者的注册商标。</p>
+
+<p><i>Visual FoxPro&reg; Readme</i> 包括 Microsoft&reg; Visual Studio&trade; -- 基于 Windows&reg; 和 Internet 的开发系统所提供的文档的更新信息。本文中的信息比帮助系统中的信息更新。本文讲述的许多问题都将在下一版本中解决。</p>
+
+<h3>目录 <font color="#000000" size="2" face="宋体">- 单击下列任意项</font></h3>
+
+<blockquote>
+  <p><b>注意</b>    在 Readme 中搜索主题时，请确保如下目录中的所有标题都是展开的。这样，在目录的标题中找到主题时，您就可以及时知道。</p>
+</blockquote>
+
+<p><strong>Visual Studio 6.0 安装常见注意事项</strong></p>
+
+<blockquote>
+  <p>关于 Visual Studio 6.0 套装产品的常见安装问题，包括产品并行安装，请参见<a href="install.htm"
+  title="Jumps to the installation readme (install.htm).">“Installation Notes”</a>的 Readme 文件 (install.htm)。</p>
+  <h5>关于 Visual Studio 套装产品的帮助系统的其他问题，请查看：</h5>
+  <p><a href="readmeDN.htm" title="Jumps to readmeDN.htm">MSDN&trade;，Microsoft Developer Network Readme。</a></p>
+</blockquote>
+
+<h5><a class="ex" href="#ReadmeSection1" title="Click to expand or collapse." id="ReadmeSection1">Visual
+FoxPro 6.0 安装注意事项</a></h5>
+<div id="ReadmeSection1Child">
+
+<BLOCKQUOTE><p><a href="#Installing Samples">安装示例</a></p>
+
+<p><a href="#Installing Online Documentation">安装联机文档</a></p>
+
+<p><a href="#New Visual FoxPro and SQL Server ODBC Drivers">新的 Visual FoxPro 和 SQL Server ODBC 驱动程序</a></p>
+
+<p><a href="#Updates for Visual FoxPro Components">Visual FoxPro 组件的更新</a></p>
+
+<p><a href="#Using Visual FoxPro 5.0 Files in Visual FoxPro 6.0">在 Visual FoxPro 6.0 中使用 Visual FoxPro 5.0 文件</a></p></BLOCKQUOTE>
+</div>
+
+<h5><a class="ex" href="#ReadmeSection2" title="Click to expand or collapse." id="ReadmeSection2">已知问题</a></h5>
+<div id="ReadmeSection2Child">
+
+<p><strong>Visual FoxPro 产品的问题</strong></p>
+
+<BLOCKQUOTE>
+<p><a href="#Active Documents">Active Document</a></p>
+<p><a href="#Changes to Vfp6run.exe, the Visual FoxPro Runtime">Vfp6run.exe（Visual FoxPro 运行时刻）的更改</a> </p>
+<p><a href="#Changes to the Selected and SelectedId Properties">Selected 和 SelectedID 属性的更改</a> </p>
+<p><a href="#Component Gallery Display Problems">拖动数据项后出现的组件管理库显示问题</a></p>
+<p><a href="#Component Gallery Output to HTML">组件管理库输出到 HTML</a></p>
+<p><a href="#Highlighting and Copying Code Examples from Help">突出显示并复制“帮助”中的代码示例</a> </p>
+<p><a href="#_SCREEN and the FormCount and Name Properties">_SCREEN 以及 FormCount 和 Name 属性</a> </p>
+<p><a href="#Tasmanian Traders Sample">Tasmanian Traders 示例</a> </p>
+<p><a href="#URL Combo Foundation Class">URL Combo 基本类</a></p>
+</BLOCKQUOTE>
+
+<p><strong>向导问题</strong></p>
+<blockquote>
+  <p><a href="#Application Wizard Help">应用程序向导的帮助</a> </p>
+  <p><a href="#Application Wizard and HTML Output">应用程序向导和 HTML 输出</a> </p>
+  <p><a href="#Application Wizard, Adding Records">应用程序向导 - 向空表中添加记录</a> </p>
+  <p><a href="#Application Wizard, Recompiling">应用程序向导 - 重新编译新应用程序</a> </p>
+  <p><a href="#Application Wizard, projectname">应用程序向导和项目名</a> </p>
+  <p><a href="#Application Wizard, projectname">导入向导</a> </p>
+  <p><a href="#Form Wizard and the Maximum Design Area Setting">表单向导和最大设计区域设置</a> </p>
+  <p><a href="#Sample Wizard Installation">示例向导的安装</a> </p>
+  <p><a href="#SQL Server Upsizing Wizard Help">SQL Server 升迁向导的帮助</a> </p>
+</blockquote>
+
+<p><strong>文档问题</strong></p>
+
+<blockquote>
+  <p><a href="#_BROWSER Help Topic">_BROWSER 帮助主题</a> </p>
+  <p><a href="#Code Analyzer Help">代码分析器的帮助</a> </p>
+  <p><a href="#Guidelines for Using Visual FoxPro Foundation Classes">“Visual FoxPro 基本类的使用指南”帮助主题中的更正</a> </p>
+  <p><a href="#Duplicate Entries in the Error Messages A-Z Help Topic">“错误信息 A-Z”帮助主题中的重复项</a> </p>
+  <p><a href="#Distributing the Filer with Run-Time Applications">与运行时刻应用程序一起发布文件查找器</a> </p>
+  <p><a href="#Foundation Class AddProp Method Syntax Incorrect">基本类 AddProp 方法程序的语法错误</a> </p>
+  <p><a href="#Foundation Class InsAitem Method Syntax Incorrect">基本类 InsAitem 方法程序的语法错误</a> </p>
+  <p><a href="#Genhtml.prg Syntax">Genhtml.prg 语法</a> </p>
+  <p><a href="#HTML Help Sample Project Directory Changed">HTML Help 示例项目的目录已更改</a> </p>
+  <p><a href="#HTML Item Dialog Box Description Incomplete">“HTML 项”对话框的说明不完整</a> </p>
+<p><a href="#HTML Help and Solution Project Directory Changed"> 联机文档和 Solution 示例项目的目录在 MSDN 中已更改</a> </p>
+  <p><a href="#Reserved Words">保留字</a> </p>
+  <p><a href="#SetData Method Help Topic">“SetData Method”帮助主题</a> </p>
+</blockquote>
+</div>
+<h5><a href="#vfpNewHead">Visual FoxPro 6.0 的新增功能</a></h5>
+
+<h5><a class="ex" href="#ReadmeSection4" title="Click to expand or collapse." id="ReadmeSection4">查找其他信息</a></h5>
+<div id="ReadmeSection4Child">
+
+<p><a href="#Frequently Asked Questions">常见问题</a></p>
+</div>
+
+<h3><a name="ReadmeSection1">Visual FoxPro 6.0 安装注意事项</a></h3>
+
+<h4><a name="Installing Samples"></a>安装示例</h4>
+
+<p>Visual FoxPro 6.0 的示例现在与 MSDN&trade; (Microsoft Developer Network) 一起安装。MSDN 安装程序位于名为 MSDN 的子文件夹中。打开该文件夹并双击 Setup.exe，即可运行 MSDN 安装向导。选择“自定义安装”，然后选择“VFP 中文版产品示例”复选框。</p>
+
+<p>示例放在公共的 MSDN 示例位置。使用 _SAMPLES 系统变量或执行 HOME(2) 命令，可以通过编程方式访问此位置。</p>
+
+<h4><a name="Installing Online Documentation"></a>安装联机文档</h4>
+
+<p>Visual FoxPro 6.0 的联机文档现在用 MSDN 安装程序进行安装。MSDN 安装程序位于名为 MSDN 的子文件夹中。打开该文件夹并双击 Setup.exe，即可运行 MSDN 安装向导。选择“自定义安装”，然后选择“VFP 中文版文档”复选框。如果您选择“典型安装”选项，Visual FoxPro 必须从 MSDN 光盘而不是硬盘上访问帮助文件。</p>
+
+<p>Visual FoxPro 帮助文件（包括 Foxhelp.chm）安装在如下位置：</p>
+
+<p>驱动器名:\Program Files\Microsoft Visual Studio\Msdn98\98vs\2052</p>
+
+<p>当您在 Visual FoxPro 中按 F1 请求帮助、在“命令”窗口输入 HELP 或者使用帮助菜单时，如果完全安装了 MSDN，Visual FoxPro 的默认行为是调用 Msdnvs98.col；如果此文件不存在，将默认使用 Foxhelp.chm。如果您在使用 Msdnvs98.col 时遇到问题，可以将 Visual FoxPro 帮助系统重新定向为使用 Foxhelp.chm。</p>
+
+<p><b>若要设置帮助文件为 Foxhelp.chm</b> 
+
+<ul>
+  <li>在“工具”菜单，单击“选项”。</li>
+  <li>单击“文件位置”选项卡。</li>
+  <li>从列出的文件类型中选择“帮助文件”，然后单击“修改”。</li>
+  <li>路径不变，用 Foxhelp.chm 替换 Msdnvs98.col，也可以用对话按钮来定位 Foxhelp.chm。</li>
+  <li>单击“确定”。</li>
+  <li>如果要将 Foxhelp.chm 定为 Visual FoxPro 以后运行的默认帮助文件，请单击“设置为默认值”。</li>
+  <li>单击“确定”。</li>
+</ul>
+
+<p><b>注意</b>    如果将帮助设为 Foxhelp.chm，那么在试图跳转到 Visual FoxPro Foxhelp.chm 帮助文件之外的主题时，您可能会遇到“未找到主题”错误。要跳转到 Foxhelp.chm 之外的主题（例如，Visual Basic 和 Visual C++ 帮助主题），请将帮助文件设为 Msdnvs98.col。</p>
+
+<h4><a name="Updates for Visual FoxPro Components"></a>Visual FoxPro 组件的更新</h4>
+
+<p>Visual FoxPro 组件的更新和 Xbase 补丁程序通常发布在 Microsoft Visual FoxPro web 站点 <a href="http://www.microsoft.com/vfoxpro"
+ title="Visual FoxPro web site">http://www.microsoft.com/vfoxpro</a> 上。请经常查看此站点的更新信息，尤其是在可能影响产品的其他 Microsoft 系统和核心技术的安装和发布之后。这些更新通常涉及已知问题、性能提高，以及急待增强的需求。</P>
+
+<h4><a name="New Visual FoxPro and SQL Server ODBC Drivers"></a>新的 Visual FoxPro 和 SQL Server ODBC 驱动程序</h4>
+
+<p>在此版本中，安装了新的 Visual FoxPro 和 SQL Server ODBC 驱动程序（VFPodbc.dll 和 SQLsrv32.dll），覆盖了原有的 ODBC 驱动程序。在安装带有最新驱动程序的这个版本之前，您可能首先需要备份原有的驱动程序。</p>
+
+<p>如果您不希望原有的驱动程序被可能潜在问题的新版本所替代，请选择“自定义安装”安装选项，然后取消选择“Microsoft ODBC 驱动程序”复选框。</p>
+
+<h4><a name="Using Visual FoxPro 5.0 Files in Visual FoxPro 6.0"></a>在 Visual FoxPro 6.0 中使用 Visual FoxPro 5.0 文件</h4>
+
+<p>任何为 Visual FoxPro 5.0 创建的 .fll 文件（FoxPro 链接库）都能在 Visual FoxPro 6.0 中正常工作。因为 Visual FoxPro 6.0 的菜单有所改变，所以如果源代码引用了系统菜单，您可能需要重新编译 Visual FoxPro 5.0 应用程序。另外，您可能需要重新编译以前的 Visual FoxPro 6.0 Beta 测试版的应用程序。</p>
+
+<p>其次，我们新增了严格的日期检查，以确保解决应用程序中的 2000 年问题。如果您的应用程序中使用了任何不明确的日期，您可能需要澄清这些日期，或者设置 STRICTDATE 为 0 以允许在应用程序中存在不明确（可能不兼容）的日期。</p>
+
+<p>此版本中包括了流行 ActiveX 控件的新版本，例如 Treeview 和 Listview。这些控件现在保存在 Mscomctl.ocx 文件中。引用 Comctl32.ocx 中的原始 ActiveX 控件的原有表单仍能正常工作。因为这两个文件可以并存于机器上，所以您可以选择安装任一版本的控件。</p>
+
+<p>关于兼容性问题的详细信息，请参阅 Vfp98 主目录中的 Vfp6FAQ.txt 文件。</p>
+
+<h3></font><a name="ReadmeSection2">已知问题</a><font
+face="宋体" size="2" link="#0000FF" vlink="#660066"
+color="#000000"></h3>
+
+<p><strong>Visual FoxPro 产品问题</strong></p>
+
+<h4><a name="Active Documents"></a>Active Document</h4>
+
+<p>如果某个 Visual FoxPro 应用程序的 ContainerReleaseType 属性设置为 1（不显示 Visual FoxPro 主窗口），并且在从 Internet Explorer 缓存中调出时终止，那么此时 Vfp6run.exe 运行时刻并不从内存中释放，它直到 Internet Explorer 4.0 终止时才从内存中释放。这是 Internet Explorer 4.0 的问题，可能将在 Internet Explorer 的后续版本中得到解决。</p>
+
+<h4><a name="Changes to Vfp6run.exe, the Visual FoxPro Runtime"></a>Vfp6run.exe（Visual FoxPro 运行时刻）的更改</h4>
+
+<p>Vfp6run.exe（Visual FoxPro 运行时刻）已经得到增强，以便简化 Active Document 的安全性设置。添加了新的参数来显示“关于 Microsoft Visual FoxPro 运行时刻”对话框。此对话框中的“应用程序安全性”按钮可用于指定 Active Document 和其他应用程序 (.app) 文件的安全性设置。</p>
+
+<p>除了使用 /security 参数 (Vfp6run.exe /security) 以外，您还可以使用新的 /? 或 ? 参数，或者省略参数。请注意：当从 Visual FoxPro .exe 发布的应用程序中显示“关于 Microsoft Visual FoxPro 运行时刻”对话框时，不显示“应用程序安全性”按钮。</p>
+
+<p>在 Microsoft Internet Explorer 4.0 中包容 Active Document，并且从“文件”菜单中选择“属性”时，数值 10 被传递给 CommandTargetExec 事件。如果 CommandTargetExec 事件返回数值 0，则禁止显示“关于 Microsoft Visual FoxPro 运行时刻”对话框或您自己的对话框。</p>
+
+<p>关于 Vfp6run.exe 和 Active Document 的详细信息，请参阅 Microsoft Visual FoxPro 6.0《程序员指南》第三十一章“互操作性和 Internet”中的“Active Document”。《程序员指南》包括在 Visual FoxPro 联机文档中。</p>
+
+<h4><a name="Changes to the Selected and SelectedId Properties"></a>Selected 和 SelectedId 属性的更改</h4>
+
+<p>在 Visual FoxPro 6.0 中，通过编程更改 Selected 或 SelectedId 属性的值将引发 ProgrammaticChange 事件。在早期版本的 Visual FoxPro 中，通过编程更改 Selected 或 SelectedId 属性的值不会引发 ProgrammaticChange 事件。</p>
+
+<h4><a name="Component Gallery Display Problems"></a>拖动数据项后出现的组件管理库显示问题</h4>
+
+<p>如果您拖动组件管理库的右边窗格中的数据项，那么即使您在左边窗格中选定了其他文件夹，左边窗格中包含所拖动数据项的文件夹仍然保持选定状态。这是组件管理库使用 ActiveX 控件的已知问题，可能在后续版本中得到更正。不过，虽然左边窗格中选定的是错误文件夹，但 ActiveX 控件仍将正常工作。</p>
+
+<h4><a name="Component Gallery Output to HTML"></a>组件管理库输出到 HTML</h4>
+
+<p>如果您向组件管理库中添加了一张表，用鼠标右键单击该表，然后选择“输出到 HTML”，结果不会创建 HTML 输出。要创建表的 HTML 输出，请打开表的浏览窗口（用 BROWSE 命令或从“视图”菜单中选择“浏览”），然后从“文件”菜单中选择“另存为 HTML”。</p>
+
+<P>您也可以按下列步骤更正此问题：</P>
+
+<P>1. 在“命令”窗口中输入如下命令：</p>
+
+<P>MODIFY CLASS _dataitem OF (HOME( ) + "gallery\vfpglry.vcx") METHOD makehtml</p>
+
+<P>2. 将该方法程序中的如下代码行：</p>
+
+<P>DO (_GENHTML) WITH "", ALIAS( ), 5</p>
+	
+<P>更改为：</p>
+
+<P>DO (_GENHTML) WITH "", ALIAS( ), 2</p>
+
+<P>3. 保存并关闭该类。</p>
+
+<h4><a name="Highlighting and Copying Code Examples from Help"></a>突出显示并复制“帮助”中的代码示例</h4>
+
+<p>在联机帮助主题中突出显示并复制代码示例可能导致回车符的位置错误。这种问题可能发生在您复制大片示例代码时。如果缺少第一行或最后一行，任何代码示例都不能运行。</p>
+
+<p>要确保复制的代码示例包含正确的行格式，请突出显示并复制“整个”代码示例，包括第一行和最后一行。</p>
+
+<h4><a name="_SCREEN and the FormCount and Name Properties"></a>_SCREEN 以及 FormCount 和 Name 属性</h4>
+
+<p>在 Visual FoxPro 6.0 中进行设计时，_SCREEN 的 FormCount 和 Name 属性的返回值与它们在 Visual FoxPro 5.0 中的返回值不同。Visual FoxPro 6.0 的 _SCREEN.Forms 集合中不包括设计器（表单设计器、报表设计器，等等），因此在打开每个 Visual FoxPro 的设计器时，FormCount 属性的值不会增加。因为 Visual FoxPro 6.0 的 _SCREEN.Forms 集合中不包括设计器，因此查询 _SCREEN.Forms 的 Name 属性将导致错误。</p>
+
+<p>AMOUSEOBJ( ) 函数可用于确定当前的设计器。</p>
+
+<h4><a name="Tasmanian Traders Sample"></a>Tasmanian Traders 示例</h4>
+
+<p>当您在“Order Entry”对话框中创建一个新的客户记录，选择已有的客户，然后选择“Save”时，Tasmanian Traders 示例将产生一个错误。</p>
+
+<p>要防止此错误的发生，请先将 tastrade.h 中的“#DEFINE DEBUGMODE .T.”行更改为“#DEFINE DEBUGMODE .F.”。Tastrade.h 放在 Tastrade 目录下的 Include 目录中。然后重新编译 Tasmanian Traders 示例应用程序。要重新编译该示例应用程序，请打开 Tasmanian Traders 项目 tastrade.pjx，选择“连编”，选择“连编应用程序”和“重新编译全部文件”，然后选择“确定”。</p>
+
+<h4><a name="URL Combo Foundation Class"></a>URL Combo 基本类</h4>
+
+<p>如果在您的应用程序中包含了 URL Combo 基本类，您应该对 _internet.vcx 类库中的 _URLCombobox 类作出下列修改，以便允许在组合框中输入更长的 URL：</p>
+
+<p>1. 将 DisplayCount 属性更改为 32。</p>
+
+<p>2. 将 InputMask 属性更改为 =REPLICATE('X', 254)。</p>
+
+<p><strong>向导问题</strong></p>
+
+<h4><a name="Application Wizard Help"></a>应用程序向导的帮助</h4>
+
+<p>运行新的应用程序向导时，在生成新框架时，应用程序生成器将自动显示帮助。在熟悉了用新框架构造应用程序的过程之后，您可以禁止使用帮助，这样，它就不会自动显示。将 Wizards 目录下 Appbldr.scx 表单文件中的 lSkipAssist 属性设置为真 (.T.)，将不会自动显示帮助。</p>
+
+<h4><a name="Application Wizard and HTML Output"></a>应用程序向导和 HTML 输出</h4>
+
+<p>应用程序向导生成的框架会自动提供各种输出和打印报表时的报表选项。如果希望自定义的应用程序输出为 HTML，需要在项目文件中包括文件 Genhtml.prg（位于主 Visual FoxPro 目录中）和 FFC 目录中的下列文件：</p>
+
+<p>_Html.vcx<br>
+_Html.vct<br>
+_Html.h<br>
+Runcode.prg</p>
+
+<p>您可以修改 FFC 目录下 Reports.vcx 文件中的 _Output 类，使它包含 EXTERNAL 命令（例如，EXTERNAL PROCEDURE Genhtml.prg），以便使该项目自动包括连编和使用时所必需的文件。</p>
+
+<p>要禁止 HTML 输出选项，您可以修改 _Output 类中的 SetDestinations 方法程序。要作此修改，请在例程最后的 OUTPUT_HTMLFILE_LOC 常数前加反斜杠 (\)，如下例所示：</p>
+
+<p>THIS.aDestinations[liHTMLFile,1] = &quot;\&quot;+OUTPUT_HTMLFILE_LOC + lcSourceAlias</p>
+
+<h4><a name="Application Wizard, Adding Records"></a>应用程序向导 - 向空表中添加记录</h4>
+
+<p>有一个已知的问题：由应用程序向导生成的应用程序不能向空表中添加新记录。当您用应用程序生成器的“数据”选项卡上的“数据库向导”按钮来添加新数据库时，可以随意生成包含空表的新数据库（在向导的最后一步使用复选框）。</p>
+
+<p>如果您随后在“数据”选项卡中选择为这些空表生成表单，表单向导生成的新表单在应用程序框架中使用时（例如，通过“文件”菜单中的“新建”选项），不能自动向表中添加记录。
+
+<P>您可以按下列步骤更正此问题：</P>
+
+<P>1. 在“命令”窗口中输入如下命令：</p>
+
+<P>MODIFY CLASS baseform OF (HOME( ) + "wizards\wizbase.vcx") METHOD pickrecord</p>
+
+<P>2. 将该方法程序中的如下代码行：</p>
+
+<P>IF GETFLDSTATE(1) # 3</p>
+	
+<P>更改为：</p>
+
+<P>IF GETFLDSTATE(1) # 3 OR RECCOUNT( )= 0</p>
+
+<p>3. 保存并关闭该类。</p>
+
+<h4><a name="Application Wizard, Recompiling"></a>应用程序向导 - 重新编译新应用程序</h4>
+
+<p>当您用应用程序向导创建新的应用程序之后，您应该重新编译该应用程序。要重新编译新的应用程序，请在“项目管理器”中打开新应用程序的项目，并选择“连编”。在“连编选项”对话框中，选择“连编应用程序”，选择“重新编译全部文件”复选框，然后选择“确定”。</p>
+
+<p>如果您不先重新编译，而直接运行新的应用程序，将生成错误信息“文件未找到 - _app”。</p>
+<h4><a name="Application Wizard, projectname"></a>应用程序向导和项目名</h4>
+
+<P>虽然本软件支持中文文件名，但当您运行应用程序向导时，应该输入英文字符串作为项目文件名。如果您输入中文字符串作为项目文件名，当您连编该应用程序时就会遇到错误信息“没有主程序不能连编”。从项目管理器可以看出，出现这个错误信息的原因是应用程序向导把所产生的主程序（xxx_app.prg）放错了位置。</P>
+
+<h4><a name="Import Wizard"></a>导入向导</h4>
+
+<p>Visual FoxPro 6.0 既可导入 Excel95 格式的文件，又可导入 Excel97 格式的文件。但导入含有特殊汉字或工作表名为中文的 Excel97 文件时，Visual FoxPro 6.0 会遇到致命错误而被关闭。</P>
+<P>解决这个问题的最稳妥办法是：先用 Excel97 打开需导入的 Excel97 文件，另存为 Excel95 格式的文件。然后再用 Visual FoxPro 6.0 导入该 Excel95 格式的文件。</P>
+
+<h4><a name="Form Wizard and the Maximum Design Area Setting"></a>表单向导和最大设计区域设置</h4>
+
+<p>如果“选项”对话框中“表单”选项卡上的“最大设计区”被设置为“无”，那么表单向导将生成一个错误。要防止此错误的发生，请选择任何其他的“最大设计区域”设置（例如，800 x 600），然后选择“设置为默认值”。</p>
+
+<h4><a name="Sample Wizard Installation"></a>示例向导的安装</h4>
+
+<p>在默认情况下，不安装示例向导，该向导在 Visual FoxPro 帮助文件中有详细说明。示例向导文件都放在 \Tools\Xsource 目录下的 XSource.zip 文件中。此目录位于 Visual FoxPro 主目录的下面。</p>
+
+<p><B>注释</B> \Tools\Xsource 目录下的 XSource.zip 文件中还包含向导和代码范围分析器的源代码。</p>
+
+<h4><a name="SQL Server Upsizing Wizard Help"></a>SQL Server 升迁向导的帮助</h4>
+
+<p>在联机文档中，“SQL Server 升迁向导：步骤 8 - 设置升迁选项”帮助主题中对空映射的说明不完整。下列段落应该添加到此主题中的“空映射”一节中。</p>
+
+<p>“SQL Server 升迁向导”的步骤 8 中包含名为“空映射”的新选项。“空映射”选项用于确保完成对远程数据的插入和更新。此选项允许覆盖正在升迁的 Visual FoxPro 表中的原有的空字段。如果选择“通用型”和“备注型”字段选项，那么 Visual FoxPro 选定表中的“所有”通用和备注型字段都将被升迁，并允许为空值。</p>
+
+<p>根据字段的空设置的不同，Visual FoxPro SQL 命令（例如，INSERT 和 UPDATE）对本地和远程数据的影响也有所不同。例如，如果一个 INSERT 命令不包括表中的所有字段，那么对本地数据，Visual FoxPro 在未指定的字段中插入空格。如果 INSERT 命令作用的是远程视图（SQL Server 数据），那么 Visual FoxPro 将在命令中未指定的字段中插入空 (.NULL.)。只要其中任何一个字段不支持 .NULL.，该命令都会失败。编写包括要插入的所有字段及其值的 INSERT 命令非常简单。但请注意：在通用型字段中插入内容还是有点麻烦。</p>
+
+<p><strong>文档问题</strong></p>
+
+<h4><a name="_BROWSER Help Topic"></a>_BROWSER 帮助主题</h4>
+
+<p>在联机文档中，_BROWSER 帮助主题的倒数第二段描述如何为特定的可视类库或对象引用运行类浏览器，如何随意包括最初选定的类名。此段后面的示例代码中 Buttons.vcx 的路径错误。示例代码应该替换为如下代码：</p>
+
+<p>DO (_BROWSER) WITH HOME(2) + 'CLASSES\BUTTONS.VCX', 'VCR'</p>
+
+<h4><a name="Code Analyzer Help"></a>代码分析器的帮助</h4>
+
+<p>在代码分析器中按 F1 来显示帮助，不能显示代码分析器的“符号”和“分层结构”选项卡的帮助。要显示这些选项卡的帮助，请在 HTML Help 中选择“索引”选项卡，在关键字文本框中输入“代码分析器”，然后按 Enter 键。为选项卡选择帮助主题。</p>
+
+<h4><a name="Guidelines for Using Visual FoxPro Foundation Classes"></a>“Visual FoxPro 基本类的使用指南”帮助主题中的更正</h4>
+
+<p>在联机文档中，“Visual FoxPro 基本类的使用指南”帮助主题中的“非可视基本类”一节的注释中缺少文字。该注释应该为：“此示例假定该代码能定位 _utilities.vcx 类库，或能从连编时包含 _utilities.vcx 的 .app 文件中运行。”</p>
+
+<p>另外，此主题中的两段示例代码中缺少引号。在“非可视基本类”一节中，将下列代码：</p>
+
+<p>LOCAL oFileVersion<br>
+oFileVersion = NewObject(_fileversion, _utilities.vcx)<br>
+WITH oFileVersion<br>
+.cFileName = HOME( )+ 'VFP6.EXE'<br>
+.GetVersion( )<br>
+.DisplayVersion( )<br>
+ENDWITH</p>
+
+<p>替换为：</p>
+
+<p>LOCAL oFileVersion<br>
+oFileVersion = NewObject('_fileversion', '_utilities.vcx')<br>
+WITH oFileVersion<br>
+.cFileName = HOME( )+ 'VFP6.EXE'<br>
+.GetVersion( )<br>
+.DisplayVersion( )<br>
+ENDWITH</p>
+
+<p>在“可视基本类”一节中，将下列代码：</p>
+
+<p>LOCAL oAbout<br>
+oAbout = NewObject(_aboutbox, _dialogs.vcx)<br>
+oAbout.Show( )</p>
+
+<p>替换为：</p>
+
+<p>LOCAL oAbout<br>
+oAbout = NewObject('_aboutbox', '_dialogs.vcx')<br>
+oAbout.Show( )</p>
+
+<h4><a name="Duplicate Entries in the Error Messages A-Z Help Topic"></a>“错误信息 A-Z”帮助主题中的重复项</h4>
+
+<p>在联机文档中，“错误信息 A-Z”帮助主题中以字母“V”开始的错误信息表中包含重复的项。但是，单击任何一个错误信息链接，显示的错误信息主题都是正确的。</p>
+
+<h4><a name="Distributing the Filer with Run-Time Applications"></a>与运行时刻应用程序一起发布文件查找器</h4>
+
+<p>Filer.dll 帮助主题声明 Filer.dll 及其相关文件只能与 Visual FoxPro 一起使用，不允许将这些文件中的任意一个与您发布的运行时刻应用程序一起发布。这项声明有误。您可以将 Filer.dll 及其相关文件（Filer.ico、Filer.scx 和 Filer.sct）与您发布的 Visual FoxPro 6.0 运行时刻应用程序一起发布。Filer.dll 及其相关文件放在 Tools 目录下的 Filer 目录中。请注意，这些文件得不到支持，没有对使用这些文件时所遇问题的技术支持。</p>
+
+<p>Visual FoxPro 主目录下的 Redist.txt 中包含一个文件列表，其中的文件可以与您的运行时刻应用程序一起发布。应当在 Redist.txt 文件中添加 Filer.dll、Filer.ico、Filer.scx 和 Filer.sct。</p>  
+
+
+
+<h4><a name="Foundation Class AddProp Method Syntax Incorrect"></a>基本类 AddProp 方法程序的语法错误</h4>
+
+<p>Visual FoxPro 6.0 _webbrowser4 Web 浏览器控件 (Web Browser Control) 基本类的 AddProp 方法程序的语法不正确。下面是它的正确语法以及对每个参数的说明：</p>
+
+<p><b>语法</b></p>
+
+<p>AddProp(<i>oObject</i>, <i>cProperty</i>, <i>tuValue</i>)</p>
+
+<p><b>参数</b></p>
+
+<p><i>cProperty</i> 指定要添加属性的对象。</p>
+
+<p><i>sContents</i> 指定属性的名称。</p>
+
+<p><i>tuValue</i> 指定要赋给该属性的值。</p>
+
+<p>关于 _webbrowser4 Web 浏览器控件 (Web Browser Control) 基本类和 AddProp 方法程序的详细信息，请参阅“Web 浏览器控件”联机帮助主题。</p>
+
+<h4><a name="Foundation Class InsAitem Method Syntax Incorrect"></a>基本类 InsAitem 方法程序的语法错误</h4>
+
+<p>Visual FoxPro 6.0  _arraylib 数组处理器 (Array Handler) 基本类的 InsAitem 方法程序的语法中缺少可选的第四个参数。下面是它的正确语法以及对每个参数的说明：</p>
+
+<p><b>语法</b></p>
+
+<p>InsAitem(@<i>aArray</i>, <i>sContents</i>, <i>iRow</i> [, <i>lAllElements</i>])</p>
+
+<p><b>参数</b></p>
+
+<p><i>aArray</i> 指定处理的数组名称。</p>
+
+<p><i>sContents</i> 指定要添加到 <i>aArray</i> 中的字符串值。</p>
+
+<p><i>iRow</i> 指定要插入 <i>sContents</i> 中值的行。</p>
+
+<p><i>lAllElements</i>，如果为真 (.T.)，那么将 <i>iRow</i> 中的所有元素都设置为 <i>sContents</i>。</p>
+
+<p>关于 _arraylib 数组处理器 (Array Handler) 基本类和 InsAitem 方法程序的详细信息，请参阅“数组处理器”联机帮助主题。</p>
+
+<h4><a name="Genhtml.prg Syntax"></a>Genhtml.prg 语法</h4>
+
+<p>在联机文档中，Genhtml.prg 帮助主题中所说明的传递给 Genhtml.prg 的参数的次序不正确。下面是正确的语法：</p>
+
+<p>DO (_GENHTML) WITH &lt;<i>cOutFile</i>&gt; &lt;<i>cSourceFile</i>&gt; [, &lt;<i>nShow</i>&gt;]
+[, &lt;<i>vIELink</i>&gt;] [,&#133; </p>
+
+<h4><a name="HTML Help Sample Project Directory Changed"></a>HTML Help 示例项目的目录已更改</h4>
+
+<p>在 Visual FoxPro 联机文档中，《程序员指南》的第三十二章中声明示例 HTML HELP 项目位于 ...\Samples\Vfp98\Solution\Help 目录中。但此目录不存在。</p>
+
+<p>HTML HELP 项目及其文件放在 .zip 文件 Solnhlp.zip 中，该文件位于安装 Visual FoxPro 6.0 所在目录的 Tools\XSource 子目录中。</p>
+
+<h4><a name="HTML Item Dialog Box Description Incomplete"></a>“HTML 项”对话框的说明不完整</h4>
+
+<p>在联机文档中，“HTML 项对话框”中的说明（该主题中的第一行）不完整。第一行应该为：“使您能为自己创建的 Web 页指定其他数据项及其属性。”</p>
+
+<h4><a name="HTML Help and Solution Project Directory Changed"></a>联机文档和 Solution 示例项目的目录在 MSDN 中已更改</h4>
+
+<p>在 Visual FoxPro 联机文档中，《安装指南》的第一章中声明 “Visual FoxPro 帮助文件（包括 Foxhelp.chm）安装于下面的位置：
+
+drive:\Program Files\Microsoft Visual Studio\Msdn98\98vs\<b>1033</b>”,
+应修订为：“Visual FoxPro 帮助文件（包括 Foxhelp.chm）安装于下面的位置：
+
+drive:\Program Files\Microsoft Visual Studio\Msdn98\98vs\<b>2052</b>”。</p>
+
+<p>在 Visual FoxPro 联机文档中，“Solution 示例”中声明 “Solution.app 位于以下文件夹：
+
+drive:\Program Files\Microsoft Visual Studio\Msdn98\98vs\<b>1033</b>\Samples\Vfp98\Solution
+>”,
+应修订为：“Solution.app 位于以下文件夹：
+
+drive:\Program Files\Microsoft Visual Studio\Msdn98\98vs\<b>2052</b>\Samples\Vfp98\Solution”。</p>
+
+
+<h4><a name="Reserved Words"></a>保留字</h4>
+
+<p>许多 Visual FoxPro 保留字未包括在“保留字”联机帮助主题中。下表列出了应该显示在“保留字”帮助主题中的其他保留字。</p>
+
+<table CELLPADDING="5" CELLSPACING="1" WIDTH="1" BORDER="0">
+  <caption><b><font SIZE="-1">保留字</font></b></caption>
+  <tr>
+    <td><font SIZE="-1">(</font></td>
+    <td><font SIZE="-1">+</font></td>
+    <td><font SIZE="-1">=&gt;</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">ADDBS</font></td>
+    <td><font SIZE="-1">AGETCLASS</font></td>
+    <td><font SIZE="-1">AGETFILEVERSION</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">ALINES</font></td>
+    <td><font SIZE="-1">AMOUSEOBJ</font></td>
+    <td><font SIZE="-1">ANETRESOURCES</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">AVCXCLASSES</font></td>
+    <td><font SIZE="-1">BARCOUNT</font></td>
+    <td><font SIZE="-1">BARPROMPT</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">BOF</font></td>
+    <td><font SIZE="-1">COMARRAY</font></td>
+    <td><font SIZE="-1">COMCLASSINFO</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">COMRETURNERROR</font></td>
+    <td><font SIZE="-1">CREATEBINARY</font></td>
+    <td><font SIZE="-1">CREATEOBJECTEX</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">CTOBIN</font></td>
+    <td><font SIZE="-1">CURSORGETPROP</font></td>
+    <td><font SIZE="-1">CURSORSETPROP</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">DBGETPROP</font></td>
+    <td><font SIZE="-1">DBSETPROP</font></td>
+    <td><font SIZE="-1">DEFAULTEXT</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">DRIVETYPE</font></td>
+    <td><font SIZE="-1">FILETOSTR</font></td>
+    <td><font SIZE="-1">FLDCOUNT</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">FONTMETRIC</font></td>
+    <td><font SIZE="-1">FORCEEXT</font></td>
+    <td><font SIZE="-1">FORCEPATH</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">FSEEK</font></td>
+    <td><font SIZE="-1">FTIME</font></td>
+    <td><font SIZE="-1">GETHOST</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">GETPEM</font></td>
+    <td><font SIZE="-1">HOME</font></td>
+    <td><font SIZE="-1">INDEXSEEK</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">ISBLANK</font></td>
+    <td><font SIZE="-1">ISHOSTED</font></td>
+    <td><font SIZE="-1">ISMOUSE</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">JUSTDRIVE</font></td>
+    <td><font SIZE="-1">JUSTEXT</font></td>
+    <td><font SIZE="-1">JUSTFNAME</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">JUSTPATH</font></td>
+    <td><font SIZE="-1">JUSTSTEM</font></td>
+    <td><font SIZE="-1">LIKEC</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">MRKPAD</font></td>
+    <td><font SIZE="-1">PADPROMPT</font></td>
+    <td><font SIZE="-1">PCOUNT</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">PEMSTATUS</font></td>
+    <td><font SIZE="-1">SQLCANCEL</font></td>
+    <td><font SIZE="-1">SQLCOLUMNS</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">SQLCONNECT</font></td>
+    <td><font SIZE="-1">SQLDISCONNECT</font></td>
+    <td><font SIZE="-1">SQLEXEC</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">SQLGETPROP</font></td>
+    <td><font SIZE="-1">SQLMORERESULTS</font></td>
+    <td><font SIZE="-1">SQLPREPARE</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">SQLSETPROP</font></td>
+    <td><font SIZE="-1">SQLSTRINGCONNECT</font></td>
+    <td><font SIZE="-1">SQLTABLES</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">STRTOFILE</font></td>
+    <td><font SIZE="-1">TAGCOUNT</font></td>
+    <td><font SIZE="-1">TAGNO</font></td>
+  </tr>
+  <tr>
+    <td><font SIZE="-1">VARTYPE</font></td>
+    <td><font SIZE="-1">WINDOW</font></td>
+    <td></td>
+  </tr>
+</table>
+
+<h4><a name="SetData Method Help Topic"></a>“SetData Method”帮助主题</h4>
+
+<p>在联机文档中，“SetData Method”帮助主题的“Remarks”一节中声明：只能在 OLEStartDrag 事件中执行 SetData 方法程序。此项声明有误 -- SetData 方法程序可以在 OLEStartDrag 事件<b>和</b> OLESetData 事件中执行。</p>
+
+<h3><a name="vfpNewHead"></a>Visual FoxPro 6.0 的新增功能</h3>
+
+<p>关于 Visual FoxPro 6.0 的新特性，请参阅 Visual FoxPro 联机文档中的“Visual FoxPro 6.0 的新增功能”主题。</p>
+
+<h3><a name="ReadmeSection4">查找其他信息</a></h3>
+
+<h4><a name="Frequently Asked Questions"></a>常见问题</h4>
+
+<p>Visual FoxPro 中还有一个 Vfp6FAQ.txt 文件，该文件包含关于 Visual FoxPro 的常见问题的答案。Vfp6FAQ.txt 安装在 Vfp98 主目录中。</p>
+
+<p>&nbsp;</p>
+</font>
+</body>
+</html>

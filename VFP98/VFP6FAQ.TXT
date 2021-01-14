@@ -1,0 +1,417 @@
+Microsoft Visual FoxPro 6.0 for Windows
+的常见问题
+
+这些是有关 Microsoft Visual FoxPro 最常见的问题。在您求助 Microsoft 产品支持服务之前，请先查阅这张列表。
+
+若想打印这些附注，请从“文件”菜单中选择“打印”命令。此文档分为以下四部分:
+---------------------------------------------------------------------
+部分 1. 技术支持与市场
+部分 2. Visual FoxPro 6.0 新增功能
+部分 3. 从其他版本的 FoxPro 和 Visual FoxPro 中移植
+部分 4. Visual FoxPro 常见问题
+---------------------------------------------------------------------
+
+部分 1. 技术支持与市场
+
+问题 1-1:  从何处可以获得产品的更新版本？
+
+答案:  在 Visual FoxPro 的 Web 站点上即可获得产品的更新信息，其中包括有关 Service Pack 和更新的示例、向导及其他代码的信息，该站点的网址为：
+
+www.microsoft.com/vfoxpro
+
+请定期查看该网站，以便下载产品的最新版本。
+
+问题 1-2:  从何处可以得到有关 Visual FoxPro 的详细资料？
+
+答案:  通过 Microsoft Visual FoxPro Web 站点是随时获得各种最新产品发布信息的最佳途径。在此站点上不仅有新的产品公告，而且还提供了产品的更新信息、技术文章、白皮书、专业开发人员设计的优秀示例、会议公告、以及与其他许多 FoxPro web 站点的各种链接。
+
+问题 1-3:  如何获得技术支持，以及如何报告软件错误？
+
+答案:  Microsoft Visual FoxPro Web 站点已经链接到了多种联机支持选项，其中包括覆盖面广阔的有关所有产品 Microsoft Knowledge Base（Microsoft 知识库）。您还可以阅读一份有关常见问题的清单。除联机支持之外，还可以直接通过电话获得技术支持。“帮助”菜单中的选项可列出技术支持的电话号码。这些电话号码也可用于报告产品中的错误。
+
+问题 1-4.  什么是 Knowledge Base？如何使用它？ 
+
+答案: Knowledge Base 是内容广泛的论文集，覆盖了如何使用产品的各种特性、已知的软件错误及其解决方案或回避的方法、以及其他有助于使用各种 Microsoft 产品的有用信息。通过以下站点可访问整个 Knowledge Base：
+
+	support.microsoft.com
+
+问题 1-5: 是否会有 Visual FoxPro 6.0a？
+
+答案:  Microsoft 公司一向承诺为用户提供高质量的产品。如果确实需要，我们将提供 Visual FoxPro 6.0 的错误修订版。但是，修订版不会使用 6.0a 版的形式。Visual FoxPro 6.0 中任何错误的修正都将包含在 Visual Studio Service Pack 中。同时还会在 Visual FoxPro 的 www.microsoft.com/vfoxpro 或 Visual Studio 的www.microsoft.com/vstudio 的 Web 站点上发布修订公告。
+
+问题 1-6:  Microsoft 公司为应用程序的开发提供了一些优秀的解决方案。怎样才能知道应该向客户推荐和使用哪种产品？ 
+
+答案:  在选择适用某项任务的产品时，需要考虑多方面的因素。Microsoft Visual FoxPro web 站点上有一份优秀的策略背景论文，它比较了 Visual FoxPro、Visual Basic、SQL Server 和 Access 等 Microsoft 产品之间的不同。
+
+问题 1-7:  哪里可以找到 Visual FoxPro 的使用示例？
+
+答案:  Visual FoxPro 6.0 产品中带有丰富的示例，其中有一些是针对 6.0 版特有功能的新示例。与 Visual FoxPro 以前的版本不同，这些示例将与所有 Visual Studio 示例安装在一起。您必须运行 MSDN Library 的“自定义”安装来安装这些示例。在 Visual FoxPro 中可使用新的 HOME(2) 函数方便地找到已安装示例的位置。
+
+除了产品中所自带的示例外，Microsoft Visual FoxPro web 站点还将经常提供新的示例。
+
+问题 1-8:  我可能会在 Microsoft web 站点上读到一篇文章，并看到 Visual Basic 和 Visual C++ 的代码。这是否意味着我不能使用 Visual FoxPro？
+
+答案:  并不是这样的。尤其是在调用和使用对象时，Visual Basic 和 Visual FoxPro 的语法几乎是相同的。您可以将 Visual Basic 的代码很快地转换成符合 Visual FoxPro 语法的代码。语法上的相似还意味着，Visual Basic 书籍和杂志上的代码也将有助于 Visual FoxPro 的开发人员。
+
+问题 1-9:  多年来我一直在使用 Visual FoxPro？有什么理由需要升级到 Visual Studio？
+
+答案:  Microsoft Visual Studio 是专业开发人员的终极应用程序开发解决方案。随着应用程序的开发越来越集中到集成客户/服务器和 Internet 的基于组件的系统，也就需要有一种完善的工具来满足当今开发人员的需要以及不断变化的商务需要。Microsoft Visual Studio 为专业开发人员提供了一整套完整的开发工具。Visual Studio 专业版包括 Visual FoxPro、Visual Basic、Visual C++、Visual J++ 和 Visual InterDev。Visual Studio 企业版除了以上五种工具外还包括 Visual SourceSafe 和 SQL Server。
+
+问题 1-10:  我怎样才能获得其他的市场信息。
+
+答案:  请将电子邮件发往以下地址：
+
+	foxmktg@microsoft.com
+
+---------------------------------------------------------------------
+部分 2. Visual FoxPro 6.0 新增功能
+
+问题 2-1:  Visual FoxPro 6.0 中有哪些新增的功能？
+
+答案: 在 6.0 版本中有很多激动人心的新特性，其中包括自定义自动服务程序 （Automation server) 的改进，Active Document、OLE 拖放支持、Access 和 Assign 方法程序、组件管理库等。有关新特性和新语言的详细内容，请在 MSDN Library 浏览器的 Visual FoxPro 起始页上单击“新增功能”。 
+
+问题 2-2:  什么是 Active Document，什么时候需要用到它？它与 Visual Basic 中的 Active Document 有什么不同？ 
+
+答案: Active Document 是在 Intranet 上配置 Visual FoxPro 应用程序的一种方法。您可以使用 Active Document 在 Microsoft Internet Explorer 浏览器中直接运行由 Visual FoxPro 创建的包含有 Visual FoxPro 代码的表单。
+
+在 Visual Basic 中，Active Document 只是稍做修改的表单，目的是支持 Internet Explorer 的特性。Visual FoxPro 中的 Active Document 与其稍有不同。ActiveDoc 类是一个非可视类，它的功能更类似于一种应用程序对象，用于处理在浏览器中运行已有的 Visual FoxPro 表单所需的事件。因此，不需要转换表单。另外还加入了一些新的属性，如表单的 ScrollBars 和 TitleBar 属性，以便包容到 Internet Explorer 中时可以与其用户界面标准保持一致。
+
+应该注意，在 Internet Explorer 所运行的 Visual FoxPro ActiveDoc 只是一个应用程序文件（.app），它也可以在 Visual FoxPro 中直接运行。也正由于这个原因，需要有 Visual FoxPro 的运行时刻版本。Active Document 更适用于 intranet 环境，这是由于大多数用户是使用调制解调器访问 Internet 的，因此在 intranet 环境中对下载大型 Visual FoxPro 运行时刻文件的限制要宽松得多。值得庆幸的是，运行时刻文件只需下载一次。
+
+问题 2-3:  与 Visual FoxPro 5.0 中的拖放相比，OLE 拖放有什么不同？
+
+答案: 在此版本之前，Visual FoxPro 支持表单与表单上控件之间的拖放。这类拖放只能用于 Visual FoxPro，也就是说其他非 Visual FoxPro 应用程序不能参与拖放操作。
+
+在此版本中，Visual FoxPro 能支持真正的 OLE 拖放，它与其他基于 Windows 的应用程序的拖放完全相同。现在您的应用程序可以使用此标准在 Microsoft Excel 和 Word 等其他应用程序之间拖放数据。
+
+问题 2-4:  为什么有两个应用程序向导？
+
+答案: 为了简化 Visual FoxPro 开发人员开发应用程序的过程，在 6.0 版中加入了很多新特性，其中包括新的应用程序框架、应用程序生成器、和组件管理库。为保持向后兼容性，也保留了 5.0 版中的旧应用程序向导。新的向导只需提供项目名和位置，这大大简化了整个应用程序的创建过程。
+
+问题 2-5:  Project 对象和 ProjectHook 对象之间有什么区别？
+
+答案: 当打开一个项目文件 (.pjx) 时，就会创建一个 Project 对象。此项目可以用以下代码引用： 
+
+	_VFP.ActiveProject
+
+Project 对象拥有“项目信息”对话框中所有信息的相关属性，其中包括文件和服务程序的集合。
+
+由于开发人员常希望与项目有关的各种事件进行交互，比如添加文件或进行连编，因此需要创建一个新类 (ProjectHook) 来支持这些事件的代码。
+
+项目的 ProjectHook 类是可选的。如果象在“项目信息”对话框中指定的那样，把 ProjectHook 类指定给一个项目，那么此类就会在项目打开时实例化（这包括 BUILD APP 等命令），而在项目关闭时被销毁。
+
+问题 2-6:  如何在 列表框 (ListBox) 控件中添加复选框？
+
+答案: 支持向 Visual FoxPro 内部的列表框控件添加复选框是一种较为普遍的要求。在新版的 Microsoft ActiveX ListView 控件及 Treeview 控件中已可以支持复选框。这些控件都包含在 Visual FoxPro 6.0 中（请参阅问题 2-7）。
+
+问题 2-7:  我的 Visual FoxPro 5.0 表单中包含有 ListView 或 TreeView 控件，它们不继承其新版本中的最新功能（如支持复选框）。已发布的应用程序中，由于带有这些表单，而在最终用户的机器上出现表单 OLE 错误，因此无法正常工作。
+
+答案:  在 6.0 版中，包含有以下 ActiveX 控件的文件，其名称已从 Comctl32.ocx 更改为 Mscomctl.ocx：
+
+	Microsoft ListView Control
+	Microsoft TreeView Control
+	Microsoft ImageList Control
+	Microsoft ProgressBar Control
+	Microsoft StatusBar Control
+	Microsoft Slider Control
+	Microsoft Tabstrip Control
+	Microsoft Toolbar Control
+
+纵使 Visual FoxPro 6.0 更新成新的 Mscomctl.ocx 文件，带有这些控件的旧的 5.0 版表单将仍引用旧的文件，因为 ActiveX 控件是由其 OleClass 属性绑定的。旧 Comctl32.ocx 文件中的 ActiveX 控件为版本 1。例如，5.0 表单上 ListView 控件的 OleClass 属性将是：
+
+	COMCTL.ListViewCtrl.1
+
+Mscomctl.ocx 文件中新的 ActiveX 控件为版本 2（或更高）。例如： 
+
+	COMCTL.TreeViewCtrl.2
+
+Visual FoxPro 不会自动升级控件，因此在发布应用程序时必须知道表单使用的是哪种版本的 ActiveX 控件。
+
+问题 2-8:  是否可以在  Visual FoxPro 6.0 中创建用户自定义集合？
+
+答案: Visual FoxPro 5.0 不直接支持创建类似于对象数组的集合。Form 对象的 Controls 属性就是一种集合。Visual FoxPro 6.0 支持 Access/Assign 方法程序，它们可以用于创建真正的用户自定义集合。在 Solutions 示例应用程序中有一个很好的相关示例。
+
+问题 2-9:  为什么 Visual FoxPro 5.0 自动 服务程序无法与 Microsoft Transaction Server 或 Active Server Page 协同工作？
+
+答案: 6.0 版中做了一些服务程序的改进，包括支持套件模型线程以使服务程序的比例范围更佳，并使其在 Active Server Page 和 Transaction Server 中的运行更平滑。类型库的改进使 Visual Basic 等应用程序可以在命令完成清单（command completion dropdown）中看到属性和方法程序。
+
+您可能在使用 Visual FoxPro 6.0 或 5.0 自动 服务程序与 Microsoft Transaction Server 2.0 时还碰到过远程进程调用错误。如果有这样的情况，请确认您至少有 Transaction Server 2.0 的 Service Pack 1 或更高的版本。
+
+问题 2-10:  我希望使用 Visual FoxPro 6.0 编写 Internet 应用程序，在版本中有很多新特性可利用。我应该从哪里着手呢？ 
+
+答案: Visual FoxPro 提供了众多的工具可以用于创建 Web 应用程序。
+
+新的“Web 发布向导”和 GENHTML 特性都是优秀的工具，可用于生成各种形式的 HTML 以发布 Visual FoxPro 的数据。您可以根据自己的需要，选择生成静态和动态的 HTML。您甚至可以使用“Web 发布向导”来生成脚本，它可以在运行时刻执行，以重新生成 HTML。
+
+Visual FoxPro 还支持创建 COM 组件（以前称为 自动 服务程序），可以用做应用程序的中层对象。可以通过 ODBC 或 ADO 访问和处理 Visual FoxPro 内部数据，或处理商务规则来配置这些对象。还可以在 Active Server Page 和 Microsoft Transaction Server 中直接访问 Visual FoxPro COM 组件。您还可以使用 Visual FoxPro 中所带的 FOXISAPI 扩展功能。可以使用 Microsoft Internet Information Server 调用该扩展功能，通过启动一个可以直接返回 HTML 的方法程序，向 Visual FoxPro COM 组件发出 HTML 请求。
+
+新的 Active Document 技术也可以用于在 Intranet 环境中运行已有的 Visual FoxPro 表单。由于需要 Visual FoxPro 运行时刻，因此它并不是在 Internet 上展开的理想方法。
+
+问题 2-11:  为什么在运行时刻修改表单新的 Scrollbars 属性时，表单上并不显示滚动条？ 
+
+答案: 在表单建立之前，Visual FoxPro 会读入表单的 Scrollbars 属性设置，因为此属性的值将决定表单的创建方式。如果 Scrollbars 属性的设置为 0（没有滚动条），Visual FoxPro 将创建一个 Visual FoxPro 5.0 式的轻型（light-weight）表单。如果 Scrollbars 属性设置为非 0 值，则 Visual FoxPro 创建的表单将会占用更多的内存。在设计应用程序，请记住，带滚动条的表单需要更多的内存。
+
+如果在设计时刻将 Scrollbars 属性设置为 0，则在运行时刻 Scrollbars 属性将是只读的，因为 Visual FoxPro 最初创建的是一个轻型表单。但是，如果在设计时刻 Scrollbars 属性设置为非 0 值，Visual FoxPro 就会允许在运行时刻对 Scrollbars 属性进行读写，因为有代码可调用 SAVEAS() 函数以创建一个带有滚动条的新表单。如果您不需要带滚动条的表单（例如，带页面框架的表单），那么请在运行时刻将 Scrollbars 属性设置成 0 以节省内存。
+
+如果在设计时刻将 Scrollbars 属性设置为非 0 值，您就可以在运行时刻改变 Scrollbars 属性的值。但是，如果您将 Scrollbars 属性的值改为 0，则 Visual FoxPro 将会隐藏表单上的滚动条，但并不会创建一个新的轻型表单。
+---------------------------------------------------------------------
+部分 3. 从其他版本的 FoxPro 和 Visual FoxPro 中移植
+
+问题 3-1:  将 Visual FoxPro 5.0 应用程序移植到 Visual FoxPro 6.0 时，需要注意哪些问题？
+
+答案: Visual FoxPro 5.0 应用程序可以直接在 Visual FoxPro 6.0 中运行。如果 5.0 版应用程序中的代码引用了系统菜单（如 _msystem），则必须重新编译代码。您也可以在 6.0 中创建应用程序，然后在 5.0 中运行它们。但是，如果这样做，您的代码就不能包含任何 6.0 的新语言。数据库可以在两种版本之间共享。
+
+菜单 (.mnx) 文件的格式有了一些小修改，以支持新的 ActiveDoc。如果试图在 6.0 中打开 5.0 的菜单，则系统将提示您将其转换成新的格式。
+
+新的菜单文件格式将兼容 5.0 版的 GENMENU，及其他读取 .mnx 文件的 XBase 实用工具。但是 Visual FoxPro 5.0 的菜单设计器将不能打开 6.0 的格式。使用以下的命令可将 6.0 的 .mnx 文件转换回 5.0 格式： 
+
+	ALTER TABLE mymenu.mnx ALTER COLUMN location N(1)
+
+但是，这样做时，菜单的 NEGOTIATE 信息可能会丢失或破坏。
+
+项目 (.pjx) 文件的格式没做修改，但是，新的 ProjectHook 信息将存储在这些文件中。因此，如果使用的 6.0 项目带有 ProjectHooks （它是可选的），那么应避免在 5.0 中打开它们。
+
+请参阅“帮助”中的“升级”部分。
+
+问题 3-2: 为什么必须运行 SYS(2333,0) 才能使各种 ActiveX 控件在 Visual FoxPro 5.0 中正确工作？
+
+答案: 在 Visual FoxPro 6.0 中默认的是 SYS(2333,0)，因此就不再需要运行它了。建议将 _vfp.AutoYield 也设置成 .F. 。
+
+问题 3-3:  将 Visual FoxPro 3.0 应用程序移植到 Visual FoxPro 6.0 时，需要注意哪些问题？
+
+答案: 在 Visual FoxPro 3.0 中编写的应用程序在 Visual FoxPro 6.0 中运行之前需要重新编译，因为两种版本之间的对象代码并不是二进制兼容的。
+
+3.0 和 5.0 的数据库 (.dbc) 文件格式有了变化，因此不能在用 3.0 和 5.0 中编写的应用程序之间共享数据库，除非 3.0 的用户使用远程视图通过 Visual FoxPro ODBC 驱动程序访问数据。
+
+3.0 和 5.0 的表单 (.scx) 文件和类 (.vcx) 文件的格式稍有不同（请参阅问题 3-5）。和 5.0 版一样，当在 6.0 版中打开 3.0 版的表单或类时，将会自动运行转换工具。
+
+5.0 版中的项目文件做了更新以支持源代码管理集成。因此 3.0 版的项目在 6.0 中打开时会自动转换以支持源代码管理。
+
+有关 5.0 和 6.0 版之间菜单和项目文件的差异的详细内容，请参阅问题 3-1。另外也可参阅“帮助”中的“升级”部分。
+
+问题 3-4:  什么是 Visual FoxPro 的跨平台策略？
+
+答案: 请参阅上面的问题 3-2，因为 Visual FoxPro for Macintosh 的现有版本是 3.0 版。对于 Visual FoxPro for Windows 的开发人员有多种跨平台解决方案可供考虑。假设 Mac 机用户以 Microsoft Internet Explorer for Macintosh 为前端平台。Visual FoxPro 6.0 自动 服务程序可用来访问 Fox 数据，并将其按 HTML 格式输出。FoxISAPI 实用工具（带有对 6.0 中新缓冲（pool）管理器的支持）就是这样的一种解决方案。
+
+问题 3-5:  如果在 Visual FoxPro 6.0 中编辑或运行 Visual FoxPro 3.0 的表单，字体会小一些，而且没有粗体。为什么会出现这样的问题，如何避免？
+
+答案:  为了使表单的创建更为简单，我们采用了 Windows 95 的标准，改变了控件的一些默认属性，其中包括 FontSize、FontBold 及 ColorSource。如果在 Visual FoxPro 3.0 中，它们被设置成默认值，那么在 Visual FoxPro 6.0 中它们仍将保持默认值。但是由于两种版本的默认值是不同的，因此文字的显示会有所不同。
+
+如果希望表单的显示保持其在 Visual FoxPro 3.0 中的样子，请将它们转换成项目的一部分。然后当您在 Visual FoxPro 6.0 中打开 Visual FoxPro 3.0 项目时，请选中“转换器”中的“保留  Visual FoxPro 3.0 属性默认值”复选框。
+
+问题 3-6:  将 FoxPro 2.x 应用程序移植到 Visual FoxPro 6.0 上时需要注意哪些问题？
+
+答案: 对于 FoxPro 开发人员，Visual FoxPro 3.0 是一次重要的升级。事实上，由于风格的变化（请参阅问题 3-7），一些人认为 Visual FoxPro 有了一个全新的产品。由于新的面向对象风格，大多数的文件格式都发生了改变。
+
+Visual FoxPro 中带有一个“转换器”实用程序，它可以处理各种文件格式的转换。但是除了可视的用户界面外，它无法将过程式的代码转换成面向对象的代码。需要知道的是，已有的 FoxPro 2.x 代码可以直接运行。我们建议在可能的情况下，将原有的源代码转换成面向对象的代码，以充分利用各项新特性，同时也可提高开发效率。
+
+Visual FoxPro 中最受欢迎的特性之一就是支持真实的数据库（如，表格的集合）。在 FoxPro 2.x 及更早的版本中，“数据库”通常就是指“表格”。
+ 
+请参阅“帮助”中的“升级”部分。
+
+问题 3-7: 什么时候需要用面向对象的编程方法（OPP）来代替过程式编程？可视化地创建类与通过编程创建类，哪种更好？ 
+
+答案:  如果您愿意，您仍然可以在 Visual FoxPro 中使用过程式的编程风格。大多数 FoxPro 2.x 版程序都是以过程式风格编写的，它们只需稍做修改即可在 Visual FoxPro 中运行。 
+
+但是，在以下这些情况下，请考虑使用 OOP 编程风格： 
+
+	1.  您的机构正致力于为新的编程项目建立结构化的、可分析的过程。
+
+	2.  您愿意花费必要的人力物力开发一个可复用的代码库，而且并不在乎是否能在此项目完成时即收回成本。
+
+	3.  您希望充分利用 Visual FoxPro 事件处理、通用代码语法和其他与 OPP 有关的优点。
+
+当您通过编程创建一个类时，您必须了解完成此工作所必需的所有命令，但是您也可以随时检查代码的任何部分。如果可视化地创建一个类，您就不需要了解完成此工作所必需的所有命令，但是您必须查看每一个方法程序。Visual FoxPro 的一大优点是可以将由代码定义的类加入到表单中，再将实例化的对象存储为类，然后再可视化地编辑这些类。这一功能，再加上通过“类浏览器”导出代码的能力，即可将这两种类设计工具完美地结合在一起。
+
+问题 3-8: 如果客户的数据需要扩充，怎样才能将 Visual FoxPro 数据移植到 Microsoft SQL Server 上？
+
+答案: Visual FoxPro 中带有升迁向导，可以将 FoxPro 数据库移植到 SQL Server 或 Oracle 上。在此向导中，可选择在数据库中自动创建远程视图以访问新的 SQL Server 数据。这种方法可以尽可能少地修改那些已有的用于访问数据的表单和报表。
+
+问题 3-9: 为什么有一个新的 Mscomctl.ocx 文件？是否还需要一个新的 Comctl32.ocx 文件？有什么潜在的问题？ 
+
+答案: Visual FoxPro 5.0 的 Comctl32.ocx 文件中包含有以下 ActiveX 控件：
+
+	Treeview
+	Listview
+	Slider
+	Imagelist
+	Status Bar
+	Tabstrip
+	Progress Bar
+	Toolbar
+
+在 Visual FoxPro 6.0 中，这些控件的更新版本将出现在新的 Mscomctl.ocx 文件中。这样做的主要原因是，在这些控件中加入了支持复选框和 hover 等新特性。
+
+Visual FoxPro 开发人员应注意以下一些问题： 
+
+- Visual FoxPro 不会自动更新表单上的 ActiveX 控件以使用更新的版本。因此，那些使用了 Treeview 等控件的表单仍将引用旧的 Comctl32.ocx 文件。
+
+- 当控件加入到表单中后，就不能再改变其版本了。这样做的目的是，当出于某些原因，新的 ActiveX 控件版本不具有向后兼容性时，它们不会破坏原有的代码。
+
+- 通过在“属性”窗口中查看控件的 OleClass 属性，即可确定控件的版本。
+
+	例如：
+	COMCTL.ListViewCtl.1		（新的 Comctl32.ocx 版本）
+	COMCTL.ListViewCtl.2		（新的 Mscomctl.ocx 版本）
+
+- 当所创建的表单需要发布时，必须知道其所使用的控件版本。如果所有的表单都使用了旧的 Listview 控件，您就不需要附带新的 Mscomctl.ocx 文件。通过“安装向导”可选择在要发布的应用程序中包含哪些特殊文件。
+
+- 对于在一台机器上同时安装并注册了 Comctl32.ocx 和 Mscomctl.ocx 控件的开发人员来说，还必须确认 Mscomctl.ocx 总是最后注册的。当向表单添加 ActiveX 控件时，“插入对象”对话框将会显示一份控件清单。对话框中有可能不显示这些控件的最新版本。
+
+现有的版本并不总是最新的版本，它只是最后注册的版本。因此，如果无意中在安装完 Visual FoxPro 后注册了 Comctl32.ocx，您可以从 Windows“开始”菜单中的“运行”对话框中运行 Regsvr32.exe，即可重新将 Mscomctl.ocx 文件注册。例如，运行： 
+
+	REGSVR32 c:\Windows\System\Mscomctl.ocx
+
+这可以保证所安装的总是这些 ActiveX 控件的最新版本。
+
+---------------------------------------------------------------------
+部分 4. Visual FoxPro 常见问题
+
+问题 4-1:  当启动应用程序的 .EXE 文件时，如何隐藏 Visual FoxPro 桌面？
+
+答案:  在 CONFIG.FPW 配置文件中添加如下命令行：
+
+	SCREEN=OFF
+
+注意：如果您无须将 CONFIG.FPW 作为单独的文件提供（也就是说，在连编 .EXE 文件之后，您不需要对它作任何改动 -- 您可向项目中添加 CONFIG.FPW 文件，并将之标记为可包含的，该文件就会连编为 .EXE 文件的一部分。只有顶层表单活动时，Visual FoxPro 才可以隐藏桌面。使用如下命令，您可以用编程方式隐藏桌面（假设已有一个顶层表单处于活动状态中）:
+
+	_VFP.Visible = .F.
+
+问题 4-2:  如何建立一个带有顶层菜单的顶层表单？
+
+答案:  要建立一个顶层表单，请将表单的 ShowWindow 属性设置为 2- 作为顶层表单。要建立一个顶层菜单，请打开“菜单设计器”。从“显示”菜单中，选择“常规选项”，然后设置“顶层表单”选项。要想将顶层菜单放入顶层表单中，请在表单的 Init（或其他）事件中添加相关的代码。例如:
+
+	DO <menu name.mpr> with THIS,.T.
+
+如果要查看调用顶层菜单的不同选项，请参阅 generated .mpr 文件中的开始部分。
+
+问题 4-3:  在 Solution 示例文件中的一些表单不能正确显示标签或者控件标题。为什么？
+
+答案:  在设计 Solution 示例文件中的表单时，只有 Windows 为默认字体设置（小字体）时才可正确显示表单。如果使用的是大字体，则一些表单不能正确显示。要想使用小字体，请在“控制面板”中双击“显示器”图标，然后在“显示器”对话框中，选择“设置”选项卡。在“字体大小”下拉列表中，选择“小字体”。
+
+问题 4-4:  每次打开一个处于源代码管理器下的 Visual FoxPro 项目时，都需要在“项目”菜单中使用“将项目加到源代码管理器中”选项吗？
+
+答案:  不，您只需使用一次。当选择“将项目加到源代码管理器中”选项时，Visual FoxPro 在您本地的磁盘上、项目的工作目录中建立现有项目文件（.PJX ）的一个副本。Visual FoxPro 也建立了一个项目文件列表（.pjm “项目元文件”，该文件用来管理不同的开发人员对项目文件的修改。）。当联接了一个项目之后，您可以象通常一样打开该项目，Visual FoxPro 可以判断出此项目是在源代码管理器下建立的。
+
+问题 4-5:  当我向处于源代码管理器下的 Visual FoxPro 项目中添加一个文件时，出现如下的错误信息:
+
+     "File <file name> could not be mapped to the SourceSafe project $/<project name>"
+
+在“Source Control Results”窗口中，紧接着上面信息的内容是:
+
+     "SCC API error 'Operation not performed' occurred on file <file name>."
+
+尽管我选择了“更新项目”列表，但所添加的文件对于共享该项目的其他用户来说仍不可见，我做错了什么？
+
+答案:  当向源代码管理器下的 Visual FoxPro 项目中添加文件时，请将它们保存在工作目录中，当前项目副本就是在该目录中建立的。
+
+问题 4-6:  我只是向源代码管理器下的 Visual FoxPro 项目中添加了一个文件，并将该文件添加到源控件管理器，但该文件对于共享该项目的其他用户来说仍不可见，什么地方错了？
+
+答案:  在建立了新文件或者将新文件添加到项目之后，必须更新项目列表文件（.PJM 文件），这样新文件或者添加的文件才对其他的用户可见。从“项目”菜单下的“源代码管理器”子菜单中，选择“更新项目列表”，然后 Visual FoxPro 将您的本地项目列表和公共存储的项目列表合并，其他用户必须依此照办。做完之后，Visual FoxPro 将所有本地项目列表文件（.PJM 文件）中的修改合并，再重新连编他们的本地项目文件（.PJX ）。
+
+问题 4-7:  什么是游离视图？能对它做些什么？
+
+答案:  在无须和主表连接的情况下，游离视图允许您快速了解一个表，同时对该表进行操作。当对表完成操作之后，您可以再和主表相连接，将视图和主表进行对照。使用游离视图，您可以:
+
+         * 从 Visual FoxPro 表或者一个远程数据源中复制一组数据。
+         * 通过应用程序或者交互地对这组复制的数据子集进行操作。
+         * 在脱机期间，可以共享一个变化的缓冲表。
+         * 重新和相应的数据源连接。
+         * 以批处理方式更新本地或者远程表。
+
+如果您工作时只需要很少的数据，在无须和数据源进行物理连接的情况下，上述特点十分有用。 -- 例如，您正在旅行或者远离办公地点工作时，有时需要和一个表中最新数据打交道。
+
+问题 4-8:  DataSource 属性和 ControlSource 属性之间有什么不同？以及 RowSource 属性和 RecordSource 属性？
+
+答案:  DataSource 属性可以影响存储在一个数据库 (.DBC) 中的 ODBC 视图。它包含了对连接到 ODBC 数据文件名称的引用，并且必须指向一个通过 ODBC 管理程序定义的有效的数据源。您可以使用 SQLSETPROP( ) 函数操作 DataSource 属性，而用 SQLGETPROP( ) 函数可以查看它的设置。
+
+ControlSource 属性用来确定一个对象所绑定的数据源；一个对象所绑定的表或者视图可以为任意类型，包括本地 Visual FoxPro 表，具有 ControlSource 属性的对象有：CheckBox、Column、ComboBox、CommandGroup、EditBox、ListBox、OLE Bound Control、 OptionButton、OptionGroup、Spinner 和 TextBox 控件。
+
+某些控件（ListBox 和 ComboBox）除了 ControlSource 属性之外，还有 RowSource 属性允许您一次显示多于一个字段和行。数据仍然是与单一的字段绑定的，这就是为什么这些控件需要 ControlSource 属性。表格控件是唯一具有 RecordSource 属性的控件，但是没有 ControlSource 属性。对于表格控件，数据是与一个完整的记录绑定的。
+
+问题 4-9:  为什么组合框只显示一行数据？我首先为该组合框定义了一个数组，然后，在表单的 Init 事件中执行了一个 SELECT - SQL 命令来激活数组。
+
+答案:  在表单的 Init 事件中，您建立了一个没有行或者只有一行的数组。当表单建立后，组合框的 Init 事件发生在表单的 Init 事件之前，所以组合框只包含一列数据。要改正此错误，请在 SELECT - SQL 语句下面紧接着添加下面代码行，在表单的 Init 事件中建立数组:
+
+	THISFORM.ComboBox1.RowSource = THISFORM.ComboBox1.RowSource
+
+问题 4-10:   如何在组合框中隐藏指定的列，只显示其他的列？
+
+答案:  在组合框中，隐藏指定列的最简单方法是使用“组合框生成器”。在“组合框生成器”的“布局”选项卡上，将这些列拖到您所希望的宽度。
+
+如果要通过编程在组合框中隐藏指定的列，请将这些列的 ColumnWidth 属性属性设置为 0。在如下的程序代码中，列 1 和列 2 被隐藏，列 3 的宽度为 100 pixels:
+
+	THISFORM.ComboBox1.ColumnWidths = 0,0,100
+
+问题 4-11:  在 Windows 95 上使用 Visual FoxPro 6.0，我建立了一个 .EXE 文件，并使用安装向导做发布盘。但现在，应用程序在任何的 Windows for Workgroups 机器上都不能运行，这是怎么回事？
+
+答案:  Visual FoxPro 6.0 是三十二位的应用程序，只能建立三十二位的 .EXE 文件。Windows for Workgroups 是十六位的操作系统，它只能运行十六位的应用程序。您需要用 Windows 95 或者 Windows NT 4.0 及更高版本运行您的 Visual FoxPro 6.0 应用程序。
+
+问题 4-12:  在一个编辑窗口中，能否对标注语法的颜色进行定制？
+
+答案:  从“工具”菜单中选择“选项”，很容易定制代码颜色。在“选项”对话框中选择“语法着色”选项卡，您会发现不同的方法可以定制代码颜色。
+
+如果要将语法颜色全部清除，从“编辑”菜单中选择“属性”，显示出“属性”对话框。然后，清除“语法着色”复选框。
+
+问题 4-13:  我是否可以自定义用于在编辑窗口中注释语法的注释标记？ 
+
+答案: Visual FoxPro 不直接支持通过用户界面改变此选项，但是，您可以人工在 Windows 注册表中加入新的设置来改变此设置。首先用 RegEdit 打开注册表（在 Windows 的“开始”菜单的“运行...”命令所提供的对话框中键入 RegEdit）。再找到以下的注册表关键字。
+
+	HKEY_CURRENT_USER\Software\Microsoft\VisualFoxPro\6.0\Options
+
+您会在右侧的浏览窗格中看到一些熟悉的设置。它们是 Visual FoxPro“选项”对话框所保存的选项。若要加入新的注释标志，请选择从“编辑”菜单中选择“新建”，再选择“字串值”，键入如下值： 
+
+	EditorCommentString
+
+最后，双击此新的注册表条目，并添加所要使用的新注释标志（默认情况下 Visual FoxPro 使用 *!*）。请确认您的条目首字符是 *，因为它会在 FoxPro 代码编译时表示注释。
+
+问题 4-14:  是否可以象“代码”窗口或“属性”窗口中的下拉列表一样，自定义组合框下拉列表的数目？ 
+
+答案: Visual FoxPro 不直接支持通过用户界面改变此选项，但是，您可以人工在 Windows 注册表中加入新的设置来改变此设置。首先用 RegEdit 打开注册表（在 Windows 的“开始”菜单的“运行...”命令所提供的对话框中键入 RegEdit）。再找到以下的注册表关键字。
+
+	HKEY_CURRENT_USER\Software\Microsoft\VisualFoxPro\6.0\Options
+
+您会在右侧的浏览窗格中看到一些熟悉的设置。它们是 Visual FoxPro“选项”对话框所保存的选项。若要加入新的 DisplayCount，请择从“编辑”菜单中选择“新建”，再选择“字串值”，键入如下值：
+
+	DisplayCount
+
+最后，双击此新的注册表条目，并加入所要显示的新行数（默认情况下 Visual FoxPro 5.0 为 7 行，而 Visual FoxPro 6.0 为 15 行）。
+
+为保持向后兼容性，用户组合框的 DisplayCount 属性仍将是 7。
+
+问题 4-15: 我在使用 Treeview 和 Listview ActiveX 控件时存在一些问题。例如，找不到 ImageList 控件所关联的图形。为什么会出现这种情况？ 
+
+答案: 此问题的症结在于您所安装的 Comctl32.ocx 文件的版本。如果 Windows\System 目录下已注册的 Comctl32.ocx 或 Mscomctl.ocx 文件的日期比 96 年 8 月 21 日更新，即它们是 Visual FoxPro 6.0 中的新版本，则您将无法通过“属性”页面将 ImageList 控件与 Treeview 或 Listview 控件关联。解决的办法是人工将如下的代码加入到控件的 Init 事件中： 
+
+	ex. Treeview Init
+	this.object.ImageList=thisform.imagelist1.object 	&& imagelist1=imagelist object
+
+	ex. Listview Init
+	this.object.Icons=thisform.imagelist2.object 		&& imagelist2=imagelist object
+	this.object.SmallIcons=thisform.imagelist3.object	&& imagelist3=imagelist object
+
+以下内容也适用于使用 96 年 8 月 21 日以后注册的 Comctl32.ocx 文件： 
+
+如果有一个表单 (.scx) 或类(.vcx) 容器中包含有使用了 ImageList  控件的 TreeView 或 ListView 控件，并且该表单或类保存时使用的是 96 年 8 月 21 日的 Comctl32.ocx 文件（即 Visual FoxPro 5.0 中所带的版本），则该表单或类将可以在 Comctl32.ocx 的任何版本下运行，因此具有完整的向前兼容性。
+
+如果创建并/或保存了一个表单或类，其中使用了 Comctl32.ocx 中的控件，而且你的 Comctl32.ocx 文件日期在 96 年 8 月 21 日以后，则修改或运行该表单或类时，就需要相同的 Comctl32.ocx 版本或更新版本。新版的 Comctl32.ocx 只有向前兼容性，而不具有向后兼容性。
+
+问题 4-16: Treeview 或 Listview ActiveX 控件在载入项目时很慢，是否有方法改进？ 
+
+答案: 在装入 TreeView 或 ListView 控件时，请加以下逻辑语句： 
+
+	treeview.Visible=.F.
+	treeview.Top=treeview.Top+9999
+	<add your code here to populate treeview here>
+	treeview.Top=treeview.Top-9999
+	treeview.Visible=.T.
+
+通常这可以使载入速度提高一倍，主要是由于控件不会再为每一个节点刷新其用户界面。
+
+问题 4-17: 我在 Visual FoxPro 中运行第二个 FoxISAPI 示例 (FOXIS.EMPLOYEE) 时可以实例化服务程序，但是在网络浏览器中却遇到一些问题，这是为什么？ 
+
+答案: 通常当服务程序可以在 Visual FoxPro 正常运行，而在浏览器有问题时，都是配置的问题。可能是由于您没有为网络服务器提供正确的访问权限，解决的方法是运行 Dcomcnfg.exe 文件，并改变这些设置。有关的详细内容，请搜索“帮助”中的 “FoxISAPI OLE Server 示例”。 
+
+
+15	Visual FoxPro FAQ
+

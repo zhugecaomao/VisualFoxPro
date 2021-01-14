@@ -1,0 +1,20 @@
+* _HTML.H - Header file for _HTML class library.
+*
+
+*-- Messages
+#DEFINE M_ALIAS_LOC					"别名"
+#DEFINE M_FILE_LOC					"文件"
+#DEFINE M_GENERATING_HTML_LOC		"正在生成 HTML"
+#DEFINE M_GENHTML_LOC				"GenHTML"
+#DEFINE M_NOT_FOUND_LOC				"没有找到"
+#DEFINE M_NOT_SUPPORTED_LOC			"不支持"
+#DEFINE M_OBJECT_LOC				"对象"
+#DEFINE M_SAVE_LOC					"保存"
+#DEFINE M_SAVE_AS_LOC				"另存为"
+
+*-- ASCII codes
+#DEFINE TAB			CHR(9)
+#DEFINE LF			CHR(10)
+#DEFINE CR			CHR(13)
+#DEFINE CR_LF		CR+LF
+#DEFINE	EVAL_ITEM	CHR(0)+"_"+CHR(255)
